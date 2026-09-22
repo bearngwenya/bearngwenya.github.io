@@ -4,43 +4,54 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>VEYRIN | Commercial Settlement Assurance</title>
-<meta name="description" content="VEYRIN helps finance teams understand retailer deductions, connect supporting evidence and focus on the exceptions that require action.">
+<meta name="description" content="VEYRIN helps finance teams understand retailer deductions, claims and settlement exceptions by bringing the commercial evidence into one structured workflow.">
 <style>
-:root{--navy:#0b2545;--slate:#475569;--teal:#2ec4b6;--light:#f6f9fb;--white:#fff;--ink:#0f172a;--line:#e2e8f0}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.55;background:var(--white)}a{text-decoration:none;color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 24px}
-nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}.brand{font-size:28px;font-weight:800;letter-spacing:.12em;color:var(--navy)}.navlinks{display:flex;gap:22px;font-size:14px;color:var(--slate)}
-.hero{padding:84px 0 64px;background:linear-gradient(135deg,#fff 0%,#eefaf8 100%)}.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;color:var(--teal);text-transform:uppercase}h1{font-size:56px;line-height:1.04;color:var(--navy);margin:14px 0 20px;letter-spacing:-.03em}h2{font-size:36px;line-height:1.15;color:var(--navy);margin:0 0 16px}.lead{font-size:19px;color:var(--slate)}.hero-card{background:var(--navy);color:white;border-radius:18px;padding:32px;box-shadow:0 22px 48px rgba(11,37,69,.14)}.hero-card strong{color:var(--teal)}
-.btn{display:inline-block;background:var(--navy);color:white;padding:13px 19px;border-radius:8px;font-weight:700;margin:8px 8px 0 0}.btn.teal{background:var(--teal);color:var(--navy)}
+:root{--navy:#0b2545;--navy2:#12375f;--slate:#475569;--teal:#2ec4b6;--light:#f6f9fb;--pale:#e7f8f5;--white:#fff;--ink:#0f172a;--line:#e2e8f0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.55;background:var(--white)}a{text-decoration:none;color:inherit}.wrap{max-width:1140px;margin:auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}.brand{font-size:28px;font-weight:800;letter-spacing:.12em;color:var(--navy)}.navlinks{display:flex;gap:22px;font-size:14px;color:var(--slate);align-items:center}.navcta{background:var(--navy);color:#fff;padding:10px 14px;border-radius:8px;font-weight:700}
+.hero{padding:78px 0 62px;background:linear-gradient(135deg,#fff 0%,#eefaf8 100%)}.grid{display:grid;grid-template-columns:1.08fr .92fr;gap:46px;align-items:center}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.15em;color:var(--teal);text-transform:uppercase}h1{font-size:54px;line-height:1.04;color:var(--navy);margin:14px 0 20px;letter-spacing:-.03em}h2{font-size:36px;line-height:1.14;color:var(--navy);margin:0 0 16px}.lead{font-size:18px;color:var(--slate)}.hero-card{background:var(--navy);color:white;border-radius:18px;padding:30px;box-shadow:0 22px 48px rgba(11,37,69,.14)}.hero-card strong{color:var(--teal)}
+.btn{display:inline-block;background:var(--navy);color:white;padding:13px 19px;border-radius:8px;font-weight:700;margin:8px 8px 0 0}.btn.teal{background:var(--teal);color:var(--navy)}.micro{font-size:13px;color:#64748b;margin-top:14px}
 .section{padding:68px 0}.alt{background:var(--light)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.card{padding:24px;border:1px solid var(--line);border-radius:14px;background:white}.card h3{margin:0 0 8px;color:var(--navy)}.card p{margin:0;color:var(--slate)}
-.example{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}.metric{padding:22px;border-radius:12px;background:white;border:1px solid var(--line);text-align:center}.metric b{display:block;font-size:28px;color:var(--navy)}.metric.em b{color:var(--teal)}
+.example{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}.metric{padding:22px;border-radius:12px;background:white;border:1px solid var(--line);text-align:center}.metric b{display:block;font-size:28px;color:var(--navy)}.metric.em{background:var(--pale)}.metric.em b{color:var(--teal)}
+.impact{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}.impact div{padding:17px 18px;background:white;border:1px solid var(--line);border-radius:12px;color:var(--slate)}.impact b{color:var(--navy)}
 .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:28px}.step{padding:18px;border-radius:10px;background:white;border-top:4px solid var(--teal)}.step small{color:var(--teal);font-weight:800}.step b{display:block;color:var(--navy);margin:6px 0}.step span{font-size:13px;color:var(--slate)}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:36px}.check{display:flex;gap:10px;margin:14px 0}.check i{font-style:normal;color:var(--teal);font-weight:900}
+.systems{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:14px;align-items:center;margin-top:28px}.system{padding:24px;border-radius:14px;background:white;border:1px solid var(--line);text-align:center}.system.mid{background:var(--navy);color:white}.system b{display:block;color:var(--navy);margin-bottom:7px}.system.mid b{color:white}.arrow{font-size:25px;color:var(--teal);font-weight:800}
+.quote{margin-top:26px;background:var(--navy);color:white;border-radius:16px;padding:26px;font-size:22px;font-family:Georgia,serif}
+.pilot{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:26px}.pilot .card{padding:18px}.pilot b{display:block;color:var(--navy);margin-bottom:6px}
 .cta{background:var(--navy);border-radius:18px;padding:36px;color:white}.cta h2{color:white}.cta p{color:#dbe5ef}footer{padding:28px 0;color:var(--slate);font-size:13px}
-@media(max-width:850px){.grid,.two{grid-template-columns:1fr}.cards,.example{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}h1{font-size:42px}.navlinks{display:none}}
-@media(max-width:520px){.flow{grid-template-columns:1fr}h1{font-size:36px}.brand{font-size:23px}}
+@media(max-width:850px){.grid{grid-template-columns:1fr}.cards,.example,.impact{grid-template-columns:1fr}.flow,.pilot{grid-template-columns:1fr 1fr}.systems{grid-template-columns:1fr}.arrow{transform:rotate(90deg);text-align:center}h1{font-size:42px}.navlinks{display:none}}
+@media(max-width:520px){.flow,.pilot{grid-template-columns:1fr}h1{font-size:36px}.brand{font-size:23px}}
 </style>
 </head>
 <body>
 <div class="wrap">
 <nav>
 <div class="brand">VEYRIN</div>
-<div class="navlinks"><a href="#problem">Problem</a><a href="#how">How it works</a><a href="#pilot">Pilot</a><a href="#contact">Contact</a></div>
+<div class="navlinks">
+<a href="#problem">Problem</a>
+<a href="#how">How it works</a>
+<a href="#systems">Systems</a>
+<a href="#pilot">Pilot</a>
+<a class="navcta" href="mailto:hello.veyrin@gmail.com?subject=VEYRIN%20Discovery%20Conversation">Book a Discovery Call</a>
+</div>
 </nav>
 </div>
 
 <section class="hero">
 <div class="wrap grid">
 <div>
-<div class="eyebrow">Commercial Settlement Assurance</div>
-<h1>Know what was deducted. Understand why. Act on what matters.</h1>
-<p class="lead">VEYRIN is developing a structured way for finance teams to understand retailer deductions, connect the supporting evidence and focus attention on the exceptions that genuinely need action.</p>
-<a class="btn" href="mailto:hello.veyrin@gmail.com?subject=VEYRIN%20Discovery%20Conversation">Start a conversation</a>
-<a class="btn teal" href="#pilot">See the pilot approach</a>
+<div class="eyebrow">For finance teams managing retailer deductions, claims and settlement exceptions</div>
+<h1>When the payment doesn't match the invoice, understand why.</h1>
+<p class="lead">VEYRIN helps finance, credit and commercial teams bring retailer deductions, remittances, invoices, trading terms and supporting evidence into one structured workflow - so they can focus on the exceptions that actually require action.</p>
+<a class="btn" href="mailto:hello.veyrin@gmail.com?subject=VEYRIN%20Discovery%20Conversation">Book a Discovery Call</a>
+<a class="btn teal" href="#how">See How VEYRIN Works</a>
+<p class="micro">No system access required for the first conversation. No software commitment.</p>
 </div>
 <div class="hero-card">
-<h3 style="font-size:26px;margin-top:0">A lower-risk way to start</h3>
-<p>We do not ask a business to commit to a major rollout before the value is demonstrated.</p>
-<p><strong>Built around your workflow.</strong><br>Proven on your data.<br>Scaled when it earns its place.</p>
+<h3 style="font-size:25px;margin-top:0">Commercial Settlement Assurance</h3>
+<p>Retailer settlement can involve rebates, promotions, shortages, returns, pricing differences, credit notes and other deductions.</p>
+<p><strong>VEYRIN is being developed to help finance teams connect the deduction to the evidence behind it.</strong></p>
+<p style="margin-bottom:0">Know what was deducted. Understand why. Act on what matters.</p>
 </div>
 </div>
 </section>
@@ -48,69 +59,114 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0
 <section class="section" id="problem">
 <div class="wrap">
 <div class="eyebrow">The commercial problem</div>
-<h2>The difficult part is not seeing that you are short. It is understanding why.</h2>
-<p class="lead">A supplier may invoice R500,000 and receive R445,000. The R55,000 difference may be legitimate - or some of it may not be. Finance still has to determine what happened.</p>
+<h2>A short payment is easy to see. Understanding it is the hard part.</h2>
+<p class="lead">A supplier may invoice R500,000 and receive R445,000. The R55,000 difference may be completely legitimate - or some of it may not be. Finance still has to determine what happened.</p>
 <div class="example">
 <div class="metric"><b>R500,000</b><span>Supplier invoice</span></div>
 <div class="metric"><b>R445,000</b><span>Payment received</span></div>
 <div class="metric em"><b>R55,000</b><span>Difference to explain</span></div>
 </div>
+<div class="impact">
+<div><b>Repetitive investigation</b><br>Experienced finance staff can spend hours finding and matching evidence.</div>
+<div><b>Ageing deductions</b><br>Cases can sit unresolved while more urgent work takes priority.</div>
+<div><b>Missed exceptions</b><br>Possible duplicates, mismatches or unsupported deductions can be overlooked.</div>
+<div><b>Limited management visibility</b><br>Outstanding, disputed and recovered value can remain spread across files and systems.</div>
+</div>
+<p class="lead" style="margin-top:26px"><strong>The problem is not that finance teams are not doing the work. The problem is that too much of the work still has to be assembled manually.</strong></p>
+</div>
+</section>
+
+<section class="section alt">
+<div class="wrap">
+<div class="eyebrow">What is VEYRIN?</div>
+<h2>One structured workflow for settlement exceptions.</h2>
+<p class="lead">VEYRIN is a B2B software platform being developed to help businesses determine whether commercial deductions and settlement differences are supported by the underlying evidence. It is designed to sit alongside existing systems rather than replace them.</p>
+</div>
+</section>
+
+<section class="section" id="how">
+<div class="wrap">
+<div class="eyebrow">How VEYRIN works</div>
+<h2>From settlement difference to focused action.</h2>
+<div class="flow">
+<div class="step"><small>01</small><b>Bring the data together</b><span>Claims, remittances, invoices, credits, rebates, terms, promotions and delivery evidence.</span></div>
+<div class="step"><small>02</small><b>Connect the evidence</b><span>Associate each deduction with the records that may support or contradict it.</span></div>
+<div class="step"><small>03</small><b>Identify the exception</b><span>Supported, potential mismatch, possible duplicate, missing evidence or human review.</span></div>
+<div class="step"><small>04</small><b>Prepare the action</b><span>Bring the relevant evidence into one work item for review, escalation or dispute.</span></div>
+<div class="step"><small>05</small><b>Track the outcome</b><span>Follow ageing, decisions, dispute outcomes and actual recovered value.</span></div>
+</div>
+<p class="lead" style="margin-top:28px"><strong>VEYRIN supports the investigation. Your team retains the commercial decision.</strong></p>
+</div>
+</section>
+
+<section class="section alt" id="systems">
+<div class="wrap">
+<div class="eyebrow">Works with your environment</div>
+<h2>Don't replace the systems that already work.</h2>
+<p class="lead">VEYRIN is being designed to work with data from existing finance, ERP, procurement and retailer environments rather than forcing businesses to rebuild their processes.</p>
+<div class="systems">
+<div class="system"><b>ERP / Finance Systems</b>SAP, SYSPRO, Dynamics and accounting exports</div>
+<div class="arrow">→</div>
+<div class="system mid"><b>VEYRIN</b>Settlement intelligence, evidence matching and exception workflow</div>
+<div class="arrow">→</div>
+<div class="system"><b>Finance Team</b>Review, decide, dispute, track and report</div>
+</div>
+<p class="micro">VEYRIN does not currently claim certified integrations with the platforms named above. The platform is designed to work with data originating from these environments.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="wrap">
+<div class="eyebrow">Management visibility</div>
+<h2>Turn settlement activity into commercial insight.</h2>
 <div class="cards">
-<div class="card"><h3>Fragmented evidence</h3><p>Claims, remittances, invoices, PODs, GRVs, trading terms, promotions and credit notes may all hold part of the answer.</p></div>
-<div class="card"><h3>Manual investigation</h3><p>Experienced finance staff spend time assembling information before they can make a commercial decision.</p></div>
-<div class="card"><h3>Limited visibility</h3><p>Management may lack one clear view of outstanding, disputed, accepted and actually recovered value.</p></div>
+<div class="card"><h3>Exception visibility</h3><p>Understand open cases, ageing, deduction categories and retailer-level trends.</p></div>
+<div class="card"><h3>Recovery visibility</h3><p>Separate identified value from disputed, accepted, rejected and actually recovered amounts.</p></div>
+<div class="card"><h3>Operational insight</h3><p>See recurring causes, workload by case type and where manual effort is being consumed.</p></div>
 </div>
 </div>
 </section>
 
-<section class="section alt" id="how">
+<section class="section alt">
 <div class="wrap">
-<div class="eyebrow">How VEYRIN works</div>
-<h2>From fragmented data to focused action</h2>
-<p class="lead">The objective is not to remove commercial judgement. It is to reduce repetitive investigation and present the right evidence when a person needs to decide.</p>
-<div class="flow">
-<div class="step"><small>01</small><b>Bring it together</b><span>Claims, remittances, invoices, terms and supporting records.</span></div>
-<div class="step"><small>02</small><b>Connect evidence</b><span>Organise records around each deduction.</span></div>
-<div class="step"><small>03</small><b>Classify exceptions</b><span>Supported, mismatch, duplicate, missing evidence or review.</span></div>
-<div class="step"><small>04</small><b>Prepare action</b><span>Create a structured work item for the finance team.</span></div>
-<div class="step"><small>05</small><b>Track outcome</b><span>Monitor resolution, ageing and actual recovery.</span></div>
-</div>
-<p style="margin-top:28px"><strong style="color:var(--teal)">We tailor the workflow - not the underlying product.</strong></p>
+<div class="eyebrow">Why VEYRIN?</div>
+<h2>Built around your workflow - not the other way around.</h2>
+<p class="lead">Every supplier has a different retailer mix, ERP environment, approval structure and evidence requirement. VEYRIN is designed to configure around those realities while keeping a consistent settlement-assurance process underneath.</p>
+<div class="quote">We tailor the workflow - not the underlying product.</div>
 </div>
 </section>
 
 <section class="section" id="pilot">
-<div class="wrap two">
-<div>
-<div class="eyebrow">Working with VEYRIN</div>
-<h2>Start with evidence, not promises.</h2>
-<p class="lead">VEYRIN is a new venture. We believe trust should be earned against a customer's real process before wider implementation is discussed.</p>
+<div class="wrap">
+<div class="eyebrow">Low-risk validation</div>
+<h2>Prove the value before scaling the software.</h2>
+<p class="lead">Start with one retailer, one historical period and one controlled set of deductions. Let the customer's own data determine whether wider deployment is justified.</p>
+<div class="pilot">
+<div class="card"><b>01 - Discovery</b>Map the current process, retailer exposure and pain points.</div>
+<div class="card"><b>02 - Define scope</b>Select a retailer, period and controlled data set.</div>
+<div class="card"><b>03 - Historical review</b>Work through claims and evidence using the VEYRIN method.</div>
+<div class="card"><b>04 - Measure</b>Compare analyst effort, exceptions, dispute outcomes and actual recovery.</div>
+<div class="card"><b>05 - Decide</b>Expand only if the evidence justifies it.</div>
 </div>
-<div>
-<div class="check"><i>✓</i><div><b>Discovery</b><br>Understand the current process, systems and pain points.</div></div>
-<div class="check"><i>✓</i><div><b>Defined scope</b><br>Choose one retailer, a historical period and a controlled set of deductions.</div></div>
-<div class="check"><i>✓</i><div><b>Historical review</b><br>Work through claims and evidence using a structured reconciliation method.</div></div>
-<div class="check"><i>✓</i><div><b>Measure</b><br>Compare effort, exceptions, dispute outcomes and actual recovered value.</div></div>
-<div class="check"><i>✓</i><div><b>Decide</b><br>Scale only if the evidence justifies it.</div></div>
-</div>
+<div class="quote">Prove first. Scale second.</div>
 </div>
 </section>
 
 <section class="section" id="contact">
 <div class="wrap">
 <div class="cta">
-<div class="eyebrow" style="color:#7ce8dc">Early pilot conversations</div>
-<h2>Let's start with your process.</h2>
+<div class="eyebrow" style="color:#7ce8dc">Start with your process</div>
+<h2>Your finance team already knows when a payment is short. VEYRIN is being built to help them understand why.</h2>
 <p>The first conversation requires no system access and no sensitive financial information. If there is a genuine opportunity to create value, we can define a controlled pilot together.</p>
 <p><strong>Thabani Ngwenya</strong><br>
 <a href="mailto:hello.veyrin@gmail.com">hello.veyrin@gmail.com</a><br>
 <a href="tel:+27828951123">082 895 1123</a></p>
-<a class="btn teal" href="mailto:hello.veyrin@gmail.com?subject=VEYRIN%20Discovery%20Conversation">Email VEYRIN</a>
+<a class="btn teal" href="mailto:hello.veyrin@gmail.com?subject=VEYRIN%20Discovery%20Conversation">Book a Discovery Call</a>
 </div>
 </div>
 </section>
 
-<footer><div class="wrap">VEYRIN | Commercial Settlement Assurance</div></footer>
+<footer><div class="wrap">VEYRIN | Commercial Settlement Assurance | South Africa</div></footer>
 </body>
 </html>
-<!-- redeploy-2026-09-22 -->
+<!-- updated-2026-09-22-demand-generation-v2 -->
