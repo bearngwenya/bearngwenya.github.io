@@ -1,2 +1,1 @@
-# bearngwenya.github.io
-VEYRIN - Commercial Settlement Assurance
+# VEYRIN\n\nCommercial Settlement Intelligence\n\nPublic research-stage website. Strategic architecture, commercial models and internal research are intentionally not published here.\n
